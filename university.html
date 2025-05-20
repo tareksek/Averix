@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Averix</title>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="icon" href="20250520.jpg" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+  <div class="containe">
+  <a href="index.html"><h class="title"> Averix </h>
+    <img src="20250520.jpg" alt=""></a>
+    </div>
+    <div class="container">
+    <table id="gradesTable">
+      <thead>
+        <tr>
+          <th> Scale </th>
+          <th> Labs </th>
+          <th>Degree TD </th>
+          <th>Degree Exam</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+    <h2 id="average">General Average </h2>
+    <button onclick="addRow()"> Add Scale </button>
+    <button onclick="calculateAverage()">Calculate the overall average</button>
+    <button onclick="saveAsPDF('gradesTable')">Save as PDF</button>
+    <button onclick="window.print()">Print Or Save As PDF</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
