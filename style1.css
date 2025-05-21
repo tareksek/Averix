@@ -5,32 +5,32 @@ body {
       text-align: center;
     }
     img {
-      margin : 200px auto 200px auto;
+      margin : 75px auto 25px auto;
       border: groove 5px #00FF77;
-      width:300px;
-      height:300px;
+      width:150px;
+      height:150px;
       border-radius:150%;
     }
 .level {
-      width: 70%;
+      width: 50%;
       max-width: 800px;
-      margin: 30px auto;
+      margin: 15px auto;
       background-color:#00FF77;
-      padding: 10px;
+      padding: 10px 20px;
       border-radius: 50px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow:2px 3px 6px #00056B75;
 }
 .level:hover {
-  padding:15px;
-  width:90%;
+  padding:15px 25px;
+  width:65%;
   transition:0.5s;
   background:#07FF00;
 }
     h,a.title {
       margin-bottom: 20px;
-      font-weight :700;
+      font-weight:700;
       font-family:;
-      font-size: 50px;
+      font-size: 120%;
       text-decoration:none;
       color:#FFFFFF;
     }
