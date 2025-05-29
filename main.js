@@ -81,5 +81,11 @@ function addRow() {
   // استدعاء مكتبة html2pdf لتحويل العنصر إلى PDF وحفظه
   html2pdf().from(wrapper).save('Grades_Table.pdf');
 }
-
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(reg => console.log('Service Worker مسجل:', reg))
+      .catch(err => console.log('فشل تسجيل Service Worker:', err));
+  });
+}
     window.onload = addRow;
